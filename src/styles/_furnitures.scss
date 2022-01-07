@@ -1,0 +1,25 @@
+.furnitures{
+    background-color: white;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+
+    @media screen  and (min-width: 800px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+.restaurant_pic{
+    background-image: url('../../assets/restaurant.png');
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 300px;
+    box-shadow: 30px -30px 0 $yellow;
+    padding-top: 100px;
+}

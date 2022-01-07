@@ -1,0 +1,10 @@
+.footer{
+    background-color: black;
+    .footer_logo{
+        font-size: 4rem;
+        padding: 50px;
+        @media screen and (min-width: 800px){
+            font-size: 7rem;
+        }
+    }
+}

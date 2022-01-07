@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+.navigation ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .navigation ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    padding-right: 15px;
+  }
+}
+
+.navigation li {
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .navigation li {
+    padding: 20px;
+  }
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 4vh;
+  font-weight: lighter;
+}
+
+.navigation .wood_logo {
+  font-weight: bold;
+}
+
+.navigation span {
+  -webkit-text-decoration: line-through #FFF176;
+          text-decoration: line-through #FFF176;
+}
+
+header {
+  background: url("../../assets/wood-left.png"), url("../../assets/wood-right.png");
+  opacity: 0.8;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  max-width: 1400px;
+  height: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+header h1 {
+  padding-top: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  header h1 {
+    padding-top: 70px;
+    font-size: 6rem;
+  }
+}
+
+.about {
+  background-color: white;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.about .chair_pic {
+  background-image: url("../../assets/chair.png");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  -webkit-box-shadow: -80px -30px 0 #FFF176;
+          box-shadow: -80px -30px 0 #FFF176;
+  margin-bottom: 50px;
+}
+
+.furnitures {
+  background-color: white;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 100px;
+}
+
+@media screen and (min-width: 800px) {
+  .furnitures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.restaurant_pic {
+  background-image: url("../../assets/restaurant.png");
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 300px;
+  -webkit-box-shadow: 30px -30px 0 #FFF176;
+          box-shadow: 30px -30px 0 #FFF176;
+  padding-top: 100px;
+}
+
+.shop {
+  background-color: black;
+  height: 100%;
+  margin-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.shop .team_pic {
+  background-image: url(../../assets/team.png);
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 780px;
+}
+
+@media screen and (min-width: 800px) {
+  .shop .team_pic {
+    margin-left: 200px;
+  }
+}
+
+.shop .title_team {
+  display: block;
+  background-color: white;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  padding: 20px 70px;
+  margin-top: 50px;
+  border: none;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .shop .title_team {
+    margin-top: 100px;
+    font-size: 3rem;
+    margin-left: 370px;
+  }
+}
+
+.shop .section_shop {
+  margin-top: 250px;
+}
+
+.shop .title_goog {
+  color: white;
+  border: none;
+  font-size: 2.5rem;
+}
+
+.shop .text_team {
+  color: white;
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: black;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .shop .text_team {
+    width: 65%;
+  }
+}
+
+.shop button {
+  background-color: black;
+  color: white;
+}
+
+.form {
+  background-color: white;
+  padding-bottom: 100px;
+}
+
+.form .title_form {
+  border: none;
+  padding-top: 70px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .form .title_form {
+    text-align: left;
+    padding-left: 200px;
+  }
+}
+
+.form .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.form .input {
+  border: 1px solid #FFF176;
+  border-radius: 1rem;
+  padding: 10px;
+  width: 85%;
+  margin: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .form .input {
+    width: 50%;
+  }
+}
+
+.form .input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.form .input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.form .input::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.form .input::placeholder {
+  text-transform: uppercase;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer .footer_logo {
+  font-size: 4rem;
+  padding: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .footer .footer_logo {
+    font-size: 7rem;
+  }
+}
+
+.App {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  text-align: center;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    letter-spacing: 2rem;
+    font-size: 5rem;
+  }
+}
+
+h1 span {
+  -webkit-text-decoration: line-through #FFF176;
+          text-decoration: line-through #FFF176;
+}
+
+main {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 2.5rem;
+  border-left: 10px solid #FFF176;
+  padding-left: 10px;
+}
+
+p {
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 25px;
+}
+
+button {
+  border: 2px solid #FFF176;
+  background: white;
+  padding: 15px 30px;
+  text-transform: uppercase;
+}

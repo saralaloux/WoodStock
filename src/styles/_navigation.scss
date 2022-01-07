@@ -1,0 +1,33 @@
+.navigation{
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media screen and (min-width: 800px){
+           flex-direction: row; 
+           justify-content: flex-end;
+           padding-right: 15px;
+        }
+    }
+    li{
+        padding: 10px;
+        @media screen and (min-width: 800px){
+            padding: 20px;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: white;
+        font-family: $font-1;
+        font-size: 4vh;
+        font-weight: lighter;
+    }
+    .wood_logo{
+        font-weight: bold;
+    }
+    span{
+        text-decoration: line-through $yellow;
+    }
+}

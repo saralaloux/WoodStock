@@ -1,0 +1,56 @@
+@import "./settings";
+@import "./navigation";
+@import "./home";
+@import "./about";
+@import "./furnitures";
+@import "./shop";
+@import "./form";
+@import "./footer";
+
+
+
+.App{
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    background-color: black;
+    font-family: $font-1;
+}
+h1{
+    font-family: $font-1;
+    color: white;
+    text-align: center;
+    letter-spacing: 1rem;
+    font-size: 3rem;
+    @media screen and (min-width: 800px){
+    letter-spacing: 2rem;
+    font-size: 5rem;
+    }
+    span{
+        text-decoration: line-through $yellow;
+    }
+
+}
+main{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-weight: lighter;
+    font-size: 2.5rem;
+    border-left : 10px solid $yellow;
+    padding-left: 10px;
+}
+p{
+    font-weight: lighter;
+    font-size: 1rem;
+    line-height: 25px;
+}
+button{
+    border: 2px solid $yellow;
+    background: white;
+    padding: 15px 30px;
+    text-transform: uppercase;
+
+}
